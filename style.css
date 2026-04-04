@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-  background-color: #ffffff;
+  background-color: #0f0a0a;
   font-family: "Inter", sans-serif;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .header {
@@ -20,33 +22,41 @@
 
 .nav {
   background-color: #0f0a0a;
+  padding: 1rem;
+  margin-top: -40px;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .nav-list {
-  list-style: none;
   padding: 0;
-  margin: 0;
   background-color: #0f0a0a;
   font-size: 20px;
+  margin-left: 320px;
 }
 
 .nav-list li {
-  display: inline-block;
-  margin-right: 20px;
   background-color: #0f0a0a;
-  text-align: center;
-  align-items: center;
 }
 
 .img-hero {
-  display: block;
-  margin: 200px auto;
+  margin: 0 auto;
   border-radius: 10px;
   opacity: 50%;
+  margin-left: -220px;
+  width: 1720px;
+  height: 1000px;
+  margin-top: 10px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .img-logo {
-    background-color: #0f0a0a;
+    width: 550px;
+    height: 300px;
+    margin-top: -170px;
+    cursor: pointer;
+    margin-left: -135px;
 }
 
 a {
@@ -56,15 +66,28 @@ a {
     margin-left: 10%;
 }
 
+.input-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -34px;
+  margin-left: 10px;
+}
+
 .input-login {
   background-color: #34495e;
+  display: inline-flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
   color: #ecf0f1;
   border: none;
   padding: 5px 10px;
   border: 3px solid #34495e;
   border-radius: 4px;
   cursor: pointer;
-  margin-left: 1000px;
+  margin-left: 1040px;
+  font-size: 21px;
+  margin-inline-end: auto;
 }
 
 .input-register {
@@ -72,31 +95,10 @@ a {
   color: #0f0a0a;
   border: none;
   padding: 5px 10px;
-  margin-left: 10px;
   border: 3px solid #fff;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.welcome-message {
-  text-align: center;
-  margin-top: 20px;
-  align-items: center;
-  background-color: #0f0a0a;
-}
-
-.welcome-message h1 {
-  color: #ecf0f1;
-  background-color: #0f0a0a;
-  margin-top: 100px;
-  font-size: 60px;
-}
-
-.welcome-message p {
-  color: #bdc3c7;
-  background-color: #0f0a0a;
-  font-size: 20px;
-  margin-top: 20px;
+  font-size: 21px;
 }
 
 .main {
@@ -182,4 +184,12 @@ a {
 
 .even-more-content-text {
   color: #bdc3c7;
+}
+
+.footer {
+  background-color: #0f0a0a;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
 }
