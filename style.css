@@ -38,17 +38,22 @@
   background-color: #0f0a0a;
 }
 
+.hero {
+  background: #0f0a0a;
+}
+
 .img-hero {
   margin: 0 auto;
   border-radius: 10px;
   opacity: 50%;
-  margin-left: -220px;
-  width: 1720px;
-  height: 1000px;
+  margin-left: -270px;
+  width: 1900px;
+  height: 1100px;
   margin-top: 10px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: block;
+  opacity: 89%;
+  -webkit-mask-image: linear-gradient(to top, transparent, black 40%, black 70%, transparent);
+  mask-image: linear-gradient(to top, transparent, black 50%, black 50%, transparent);
 }
 
 .img-logo {
@@ -64,6 +69,7 @@ a {
     text-decoration: none;
     background-color: #0f0a0a;
     margin-left: 10%;
+    border-radius: 5px;
 }
 
 .input-buttons {
@@ -74,15 +80,15 @@ a {
 }
 
 .input-login {
-  background-color: #34495e;
+  background-color: #ffffff;
   display: inline-flex;
   list-style: none;
   justify-content: center;
   align-items: center;
-  color: #ecf0f1;
+  color: #0f0a0a;
   border: none;
   padding: 5px 10px;
-  border: 3px solid #34495e;
+  border: 1.6px solid #ffffff;
   border-radius: 4px;
   cursor: pointer;
   margin-left: 1040px;
@@ -91,14 +97,27 @@ a {
 }
 
 .input-register {
-  background-color: #fff;
+  background-color: #2191FB;
   color: #0f0a0a;
   border: none;
   padding: 5px 10px;
-  border: 3px solid #fff;
+  border: 3px solid #2191fb;
+  color: #ffffff;
   border-radius: 4px;
   cursor: pointer;
   font-size: 21px;
+}
+
+.input-login:hover {
+  background-color: #e5e5e5;
+  color: #0f0a0a;
+  border: 3px solid #e5e5e5;
+}
+
+.input-register:hover {
+  background-color: #0077b6;
+  color: #ffffff;
+  border: 3px solid #0077b6;
 }
 
 .main {
