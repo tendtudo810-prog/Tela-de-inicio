@@ -23,7 +23,7 @@
 .nav {
   background-color: #0f0a0a;
   padding: 1rem;
-  margin-top: -40px;
+  margin-top: -70px;
   background: rgba(0, 0, 0, 0.4);
 }
 
@@ -36,6 +36,28 @@
 
 .nav-list li {
   background-color: #0f0a0a;
+}
+
+.nav ul li {
+  display: inline-block;
+  list-style: none;
+  font-size: 2rem;
+  padding: 0 10px;
+  margin: 0 20px;
+}
+
+.nav ul li::after {
+  content: "";
+  height: 3px;
+  background: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.nav ul li:hover::after {
+  width: 100%;
 }
 
 .hero {
@@ -57,26 +79,39 @@
 }
 
 .img-logo {
-    width: 550px;
-    height: 300px;
-    margin-top: -170px;
+    width: 270px;
+    height: 60px;
+    margin-top: -110px;
     cursor: pointer;
-    margin-left: -135px;
+    margin-left: -55px;
 }
 
 a {
     color: #ecf0f1;
     text-decoration: none;
     background-color: #0f0a0a;
-    margin-left: 10%;
+    margin-left: 1%;
+    margin-right: 30px;
     border-radius: 5px;
+    position: relative;
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    border-radius: 14px;
+    transition: color 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transform: 0.2 ease;
+    outline: none;
+    font-size: clamp(18px, 2.2vw, 16px);
 }
 
 .input-buttons {
   display: flex;
   justify-content: flex-end;
   margin-top: -34px;
-  margin-left: 10px;
+  margin-left: 50px;
 }
 
 .input-login {
@@ -88,12 +123,14 @@ a {
   color: #0f0a0a;
   border: none;
   padding: 5px 10px;
-  border: 1.6px solid #ffffff;
+  border: 3px solid #ffffff;
   border-radius: 4px;
   cursor: pointer;
   margin-left: 1040px;
-  font-size: 21px;
+  font-size: 15px;
   margin-inline-end: auto;
+  transition: 0.6s;
+  font-weight: 600;
 }
 
 .input-register {
@@ -105,33 +142,42 @@ a {
   color: #ffffff;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 21px;
+  font-size: 15px;
+  transition: 0.6s;
+  font-weight: 600;
 }
 
 .input-login:hover {
-  background-color: #e5e5e5;
+  background-color: #e8e8e8;
   color: #0f0a0a;
-  border: 3px solid #e5e5e5;
+  border: 3px solid #e8e8e8;
+  font-size: 21px;
+  transition: 0.6s;
 }
 
 .input-register:hover {
   background-color: #0077b6;
   color: #ffffff;
   border: 3px solid #0077b6;
+  font-size: 21px;
+  transition: 0.6s;
 }
 
 .main {
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 15px;
+  margin: 0 auto;
 }
 
 .main-title {
   color: #ecf0f1;
+  text-align: center;
+  margin-top: -300px;
+  font-size: 50px;
 }
 
 .main-content {
   color: #bdc3c7;
+  text-align: center;
+  font-size: 20px;
 }
 
 .article {
