@@ -34,48 +34,22 @@
   margin-left: 320px;
 }
 
-.nav-list li {
-  background-color: #0f0a0a;
-}
-
-.nav ul li {
-  display: inline-block;
-  list-style: none;
-  font-size: 2rem;
-  padding: 0 10px;
-  margin: 0 20px;
-}
-
-.nav ul li::after {
-  content: "";
-  height: 3px;
-  background: #ffffff;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  transition: 0.5s;
-}
-
-.nav ul li:hover::after {
-  width: 100%;
-}
-
 .hero {
   background: #0f0a0a;
 }
 
 .img-hero {
   margin: 0 auto;
-  border-radius: 10px;
+  background-color: #0f0a0a;
   opacity: 50%;
-  margin-left: -270px;
+  margin-left: -140px;
   width: 1900px;
   height: 1100px;
   margin-top: 10px;
   display: block;
   opacity: 89%;
-  -webkit-mask-image: linear-gradient(to top, transparent, black 40%, black 70%, transparent);
-  mask-image: linear-gradient(to top, transparent, black 50%, black 50%, transparent);
+  -webkit-mask-image: linear-gradient(to top, transparent, black 30%, black 70%, transparent);
+  mask-image: linear-gradient(to top, transparent, black 40%, black 60%, transparent);
 }
 
 .img-logo {
@@ -111,7 +85,7 @@ a:hover {
   text-decoration: underline;
   background-color: #0f0a0a;
   color: #ffffff;
-  transition: 0.7s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .input-buttons {
@@ -119,6 +93,7 @@ a:hover {
   justify-content: flex-end;
   margin-top: -34px;
   margin-left: 50px;
+
 }
 
 .input-login {
@@ -187,14 +162,56 @@ a:hover {
   font-size: 20px;
 }
 
-.main-content {
-  margin-right: 30px;
-  margin-bottom: 30px;
+#img-p {
+  color: #ffffff;
+  position: absolute;
   margin-top: 200px;
+  margin-left: 200px;
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+}
+
+#p {
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  font-weight: 500;
+  margin-left: 800px;
+  margin-top: -434px;
+  position: absolute;
+}
+
+#parg {
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  position: absolute;
+  margin-left: 1400px;
+  margin-top: -434px;
+  font-weight: 500;
+}
+
+.main-content {
+  margin-right: 60px;
+  margin-bottom: 30px;
+  margin-top: 180px;
   margin-left: 110px;
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 8px;
+  background-color: #0f0a0a;
+  padding: 60px;
+  border-radius: 90px;
+  border: 3px solid #0f0a0a;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.main-content:hover {
+  transition: 0.7s;
+  padding: 73px;
+  margin-top: 100px;
+  margin-left: 98px;
+  border-color: #0077b6;
+  border-radius: 20px;
 }
 
 .article {
